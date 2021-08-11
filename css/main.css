@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.topinfo {
+  background-color: #2796FF;
+  height: 40px;
+}
+.topinfo__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .topinfo__body span {
+    display: none;
+  }
+}
+.topinfo__div {
+  display: flex;
+  margin: 0 -10px;
+}
+.topinfo__link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 0 10px;
+}
+.topinfo__img {
+  height: 25px;
+  margin: 0 5px 0 0;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 9;
+  top: 40px;
+}
+@media (max-width: 540px) {
+  .header {
+    height: 50px;
+  }
+}
+.header__body {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 540px) {
+  .header__body {
+    height: 50px;
+  }
+}
+.header__logo {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 28px;
+  color: #2796FF;
+}
+@media (max-width: 540px) {
+  .header__menu {
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+  }
+}
+.header__link {
+  color: #1f1f1f;
+  text-transform: capitalize;
+  margin: 0 0 0 10px;
+  font-size: 14px;
+}
+.header__link img {
+  display: none;
+}
+@media (max-width: 540px) {
+  .header__link {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .header__link img {
+    display: block;
+    height: 24px;
+    margin: 0 0 5px 0;
+  }
+}
+
+.hcatalog {
+  position: absolute;
+  z-index: 8;
+  top: 60px;
+  left: -300px;
+  transition: left 0.7s;
+  height: 100vh;
+  background-color: #F8F8F8;
+}
+@media (max-width: 540px) {
+  .hcatalog {
+    top: 50px;
+  }
+}
+.hcatalog.active {
+  left: 0;
+  transition: left 0.7s;
+}
+.hcatalog__body {
+  background-color: #F8F8F8;
+  padding: 10px 0 110px 0;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* W3C standard
+  сейчас только для Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #2796FF #ededed;
+  /* для Chrome/Edge/Safari */
+}
+@media (max-width: 540px) {
+  .hcatalog__body {
+    padding: 10px 0 160px 0;
+  }
+}
+.hcatalog__body::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+.hcatalog__body::-webkit-scrollbar-track {
+  background: #ededed;
+}
+.hcatalog__body::-webkit-scrollbar-thumb {
+  background-color: #2796FF;
+  border-radius: 10px;
+  border: 3px solid #ededed;
+}
+.hcatalog__link {
+  padding: 15px;
+  display: inline-block;
+  width: 250px;
+  color: #1f1f1f;
+  text-transform: uppercase;
+}
+.hcatalog__link:hover {
+  background-color: rgba(37, 144, 244, 0.2);
+}

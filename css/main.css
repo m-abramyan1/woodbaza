@@ -105,6 +105,8 @@ body {
 .topinfo {
   background-color: #2796FF;
   height: 40px;
+  width: 100%;
+  position: fixed;
 }
 .topinfo__body {
   display: flex;

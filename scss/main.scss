@@ -114,6 +114,8 @@ body{
 .topinfo {
     background-color:$activeColor;
     height: 40px;
+    width: 100%;
+    position: fixed;
     &__body {
       @media (max-width: 768px) {
         span{

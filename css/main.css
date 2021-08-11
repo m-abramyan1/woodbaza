@@ -107,6 +107,7 @@ body {
   height: 40px;
   width: 100%;
   position: fixed;
+  top: 0;
 }
 .topinfo__body {
   display: flex;

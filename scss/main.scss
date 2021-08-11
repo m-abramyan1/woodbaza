@@ -116,6 +116,7 @@ body{
     height: 40px;
     width: 100%;
     position: fixed;
+    top: 0;
     &__body {
       @media (max-width: 768px) {
         span{

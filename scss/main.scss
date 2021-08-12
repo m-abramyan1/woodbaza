@@ -203,7 +203,7 @@ body{
     text-transform: capitalize;
     margin: 0 0 0 10px;
     font-size: 14px;
-    img{
+    svg{
       display: none;
     }
     @media (max-width: 540px) {
@@ -214,10 +214,18 @@ body{
       align-items: center;
       justify-content: center;
       width: 100%;
-      img{
+      svg{
         display: block;
         height: 28px;
         margin: 0 0 5px 0;
+        &.active{
+          path{
+            stroke: #2796FF;
+          }
+          path.round{
+            fill: #2796FF;
+          }
+        }
       }
     }
   }

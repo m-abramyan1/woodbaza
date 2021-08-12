@@ -188,7 +188,7 @@ body {
   margin: 0 0 0 10px;
   font-size: 14px;
 }
-.header__link img {
+.header__link svg {
   display: none;
 }
 @media (max-width: 540px) {
@@ -201,10 +201,16 @@ body {
     justify-content: center;
     width: 100%;
   }
-  .header__link img {
+  .header__link svg {
     display: block;
     height: 28px;
     margin: 0 0 5px 0;
+  }
+  .header__link svg.active path {
+    stroke: #2796FF;
+  }
+  .header__link svg.active path.round {
+    fill: #2796FF;
   }
 }
 

@@ -5,13 +5,11 @@ CATALOG_BTN.addEventListener('click', () => {
     CATALOG.classList.toggle('active')
 })
 
-const ICON = document.querySelectorAll('.headerIcon')
 const LINK = document.querySelectorAll('.header__link')
 
-for (let i in ICON){
-    let icon = ICON[i]
-    let link = LINK[i]
-    link.addEventListener('click', () => {
-        icon.classList.toggle('active')
+for(let i in LINK){
+    LINK[i].addEventListener('click', () => {
+        // if(link.classList.contains('active'))
+        LINK[i].classList.toggle('active')
     })
 }

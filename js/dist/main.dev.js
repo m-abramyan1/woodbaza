@@ -5,17 +5,15 @@ var CATALOG = document.querySelector('.hcatalog');
 CATALOG_BTN.addEventListener('click', function () {
   CATALOG.classList.toggle('active');
 });
-var ICON = document.querySelectorAll('.headerIcon');
 var LINK = document.querySelectorAll('.header__link');
 
 var _loop = function _loop(i) {
-  var icon = ICON[i];
-  var link = LINK[i];
-  link.addEventListener('click', function () {
-    icon.classList.toggle('active');
+  LINK[i].addEventListener('click', function () {
+    // if(link.classList.contains('active'))
+    LINK[i].classList.toggle('active');
   });
 };
 
-for (var i in ICON) {
+for (var i in LINK) {
   _loop(i);
 }

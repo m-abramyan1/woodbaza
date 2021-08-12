@@ -103,6 +103,12 @@ body{
     font-family: 'Rubik', sans-serif;
     background-color: #fff;
 }
+.content{
+  margin: 100px 0 0 0;
+  @media (max-width: 540px) {
+    margin: 90px 0 0 0;
+  }
+}
 
 .container{
     max-width: 1200px;
@@ -214,27 +220,30 @@ body{
       align-items: center;
       justify-content: center;
       width: 100%;
+      &.active{
+        color: $activeColor;
+        svg{
+            path{
+              stroke: $activeColor;
+            }
+            path.round{
+              fill: $activeColor;
+            }
+        }
+      }
       svg{
         display: block;
         height: 28px;
         margin: 0 0 5px 0;
-        &.active{
-          path{
-            stroke: #2796FF;
-          }
-          path.round{
-            fill: #2796FF;
-          }
-        }
       }
     }
   }
 }
 
 .hcatalog {
-  position: absolute;
+  position: fixed;
   z-index: 8;
-  top: 60px;
+  top: 100px;
   @media (max-width: 540px) {
    top: 50px;
   }
@@ -244,7 +253,7 @@ body{
     left: 0;
     transition: left 0.7s;
   }
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-color: #F8F8F8;
   // .hcatalog__body
 

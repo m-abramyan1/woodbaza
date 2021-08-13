@@ -115,7 +115,7 @@ body {
 }
 
 .topinfo {
-  background-color: #2796FF;
+  background-color: #00C876;
   height: 40px;
   width: 100%;
   position: fixed;
@@ -178,7 +178,7 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 28px;
-  color: #2796FF;
+  color: #00C876;
 }
 @media (max-width: 540px) {
   .header__menu {
@@ -214,13 +214,13 @@ body {
     width: 100%;
   }
   .header__link.active {
-    color: #2796FF;
+    color: #00C876;
   }
   .header__link.active svg path {
-    stroke: #2796FF;
+    stroke: #00C876;
   }
   .header__link.active svg path.round {
-    fill: #2796FF;
+    fill: #00C876;
   }
   .header__link svg {
     display: block;
@@ -258,7 +258,7 @@ body {
   /* W3C standard
   сейчас только для Firefox */
   scrollbar-width: thin;
-  scrollbar-color: #2796FF #ededed;
+  scrollbar-color: #00C876 #ededed;
   /* для Chrome/Edge/Safari */
 }
 .hcatalog__body::-webkit-scrollbar {
@@ -269,7 +269,7 @@ body {
   background: #ededed;
 }
 .hcatalog__body::-webkit-scrollbar-thumb {
-  background-color: #2796FF;
+  background-color: #00C876;
   border-radius: 10px;
   border: 3px solid #ededed;
 }
@@ -281,5 +281,5 @@ body {
   text-transform: uppercase;
 }
 .hcatalog__link:hover {
-  background-color: rgba(37, 144, 244, 0.2);
+  background-color: rgba(0, 200, 118, 0.2);
 }

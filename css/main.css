@@ -226,7 +226,12 @@ body {
   }
 }
 
+.wrapper {
+  height: 100%;
+}
+
 .hcatalog {
+  height: calc(100% - 100px);
   position: fixed;
   z-index: 8;
   top: 100px;
@@ -237,6 +242,7 @@ body {
 @media (max-width: 540px) {
   .hcatalog {
     top: 90px;
+    height: calc(100% - 150px);
   }
 }
 .hcatalog.active {

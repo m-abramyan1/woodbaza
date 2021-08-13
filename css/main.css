@@ -232,13 +232,11 @@ body {
   top: 100px;
   left: -300px;
   transition: left 0.7s;
-  height: calc(100vh - 100px);
   background-color: #F8F8F8;
 }
 @media (max-width: 540px) {
   .hcatalog {
     top: 90px;
-    height: calc(100vh - 150px);
   }
 }
 .hcatalog.active {

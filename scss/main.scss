@@ -102,13 +102,17 @@ $activeColorLight : rgba(37, 144, 244, 0.2); // blue
 body{
     font-family: 'Rubik', sans-serif;
     background-color: #fff;
+    height: 100%;
 }
-.content{
-  margin: 100px 0 0 0;
+.wrapper{
+  min-height: 100%;
+  padding: 110px 0 0 0;
+  background-color: #2796FF;
   @media (max-width: 540px) {
-    margin: 90px 0 0 0;
+    padding: 100px 0 70px 0;
   }
 }
+
 
 .container{
     max-width: 1200px;
@@ -238,9 +242,6 @@ body{
       }
     }
   }
-}
-.wrapper{
-  height: 100%;
 }
 .hcatalog {
   height: calc(100% - 100px);

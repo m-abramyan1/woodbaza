@@ -238,7 +238,7 @@ body {
 @media (max-width: 540px) {
   .hcatalog {
     top: 90px;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 150px);
   }
 }
 .hcatalog.active {

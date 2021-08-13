@@ -248,7 +248,7 @@ body{
   transition: left 0.7s;
   @media (max-width: 540px) {
     top: 90px;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 150px);
    }
   &.active{
     left: 0;
@@ -295,7 +295,6 @@ body{
   // .hcatalog__link
 
   &__link {
-
     padding: 15px;
     display: inline-block;
     width: 250px;

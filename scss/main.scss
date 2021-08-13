@@ -244,27 +244,23 @@ body{
   position: fixed;
   z-index: 8;
   top: 100px;
-  @media (max-width: 540px) {
-   top: 50px;
-  }
   left: -300px;
   transition: left 0.7s;
+  @media (max-width: 540px) {
+    top: 90px;
+    height: calc(100vh - 110px);
+   }
   &.active{
     left: 0;
     transition: left 0.7s;
   }
-  height: calc(100vh - 50px);
+  height: calc(100vh - 100px);
   background-color: #F8F8F8;
   // .hcatalog__body
-
   &__body {
     background-color: #F8F8F8;
-    padding: 10px 0 110px 0;
-    @media (max-width: 540px) {
-      padding: 10px 0 160px 0;
-     }
     overflow-x: hidden;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

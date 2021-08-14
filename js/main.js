@@ -11,7 +11,7 @@ CATALOG_BTN.addEventListener('click', () => {
     // CATALOG.style.height = (window.innerHeight - 150) + 'px';
 })
 document.querySelector('.wrapper').addEventListener('click', () => {
-    console.log('wr')
+    
 })
 
 const LINK = document.querySelectorAll('.header__link')

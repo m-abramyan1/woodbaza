@@ -90,11 +90,11 @@ h6 {
   font-weight: inherit;
 }
 // 340px, 420px, 640px, 1024px, 1200px
-$activeColor : #00C876; // green
-// $activeColor : #2796FF; // blue
+// $activeColor : #00C876; // green
+$activeColor : #2796FF; // blue
 
-$activeColorLight : rgba(0, 200, 118, 0.2); // green
-// $activeColorLight : rgba(37, 144, 244, 0.2); // blue
+// $activeColorLight : rgba(0, 200, 118, 0.2); // green
+$activeColorLight : rgba(37, 144, 244, 0.2); // blue
 
 
 
@@ -105,11 +105,16 @@ body{
     height: 100%;
 }
 .wrapper{
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   padding: 110px 0 0 0;
   @media (max-width: 540px) {
-    padding: 100px 0 70px 0;
+    padding: 100px 0 50px 0;
   }
+}
+.main{
+  flex: 1 1 auto;
 }
 
 
@@ -307,3 +312,117 @@ body{
     }
   }
 }
+
+
+
+
+
+
+.footer {
+  background-color: #F6F7F8;
+  color: #333333;
+  width: 100%;
+  @media (max-width: 540px) {
+    bottom: 60px;
+  }
+  // .footer__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .footer__item
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EAECEE;
+    padding: 10px 0;
+  }
+
+  // .footer__nav
+
+  &__nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    @media (max-width: 850px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0 1 100%;
+    }
+  }
+
+  // .footer__link
+
+  &__link {
+    text-transform: uppercase;
+    color: #333333;
+    font-weight:  bold;
+    padding: 5px 0;
+    @media (max-width: 750px) {
+      flex: 0 1 33.3333%
+    }
+    @media (max-width: 550px) {
+      flex: 0 1 50%
+    }
+    @media (max-width: 350px) {
+      flex: 0 1 100%
+    }
+  }
+
+
+  // .footer__catalog
+
+  &__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  // .footer__catlink
+
+  &__catlink {
+    text-transform: uppercase;
+    flex: 0 1 16.666%;
+    @media (max-width: 1050px) {
+      flex: 0 1 20%;
+    }
+    @media (max-width: 850px) {
+      flex: 0 1 25%;
+    }
+    @media (max-width: 750px) {
+      flex: 0 1 33.3333%
+    }
+    @media (max-width: 550px) {
+      flex: 0 1 50%
+    }
+    @media (max-width: 350px) {
+      flex: 0 1 100%
+    }
+    padding: 10px 0;
+    color: #333333;
+    &:hover{
+      color: $activeColor;
+    }
+  }
+
+  // .footer__social
+
+  &__social {
+    min-width: 130px;
+    svg{
+      width: 28px;
+      margin: 0 0 0 10px;
+      path{
+        stroke: #333333;
+      }
+    }
+  }
+}
+
+
+
+

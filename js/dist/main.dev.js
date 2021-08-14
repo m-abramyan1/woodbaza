@@ -12,9 +12,7 @@ CATALOG_BTN.addEventListener('click', function () {
   } // CATALOG.style.height = (window.innerHeight - 150) + 'px';
 
 });
-document.querySelector('.wrapper').addEventListener('click', function () {
-  console.log('wr');
-});
+document.querySelector('.wrapper').addEventListener('click', function () {});
 var LINK = document.querySelectorAll('.header__link');
 
 var _loop = function _loop(i) {

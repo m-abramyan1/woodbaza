@@ -10,13 +10,16 @@ CATALOG_BTN.addEventListener('click', () => {
     }
     // CATALOG.style.height = (window.innerHeight - 150) + 'px';
 })
+document.querySelector('.wrapper').addEventListener('click', () => {
+    console.log('wr')
+})
 
 const LINK = document.querySelectorAll('.header__link')
 
-for(let i in LINK){
-    LINK[i].addEventListener('click', () => {
-        // if(link.classList.contains('active'))
-        LINK[i].classList.toggle('active')
+for(let i = 0; i < LINK.length; i++){
+    let link = LINK[i]
+    link.addEventListener('click', () => {
+        link.classList.toggle('active')
     })
 }
 

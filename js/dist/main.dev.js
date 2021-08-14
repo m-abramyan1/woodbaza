@@ -12,15 +12,18 @@ CATALOG_BTN.addEventListener('click', function () {
   } // CATALOG.style.height = (window.innerHeight - 150) + 'px';
 
 });
+document.querySelector('.wrapper').addEventListener('click', function () {
+  console.log('wr');
+});
 var LINK = document.querySelectorAll('.header__link');
 
 var _loop = function _loop(i) {
-  LINK[i].addEventListener('click', function () {
-    // if(link.classList.contains('active'))
-    LINK[i].classList.toggle('active');
+  var link = LINK[i];
+  link.addEventListener('click', function () {
+    link.classList.toggle('active');
   });
 };
 
-for (var i in LINK) {
+for (var i = 0; i < LINK.length; i++) {
   _loop(i);
 }

@@ -304,13 +304,14 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 .orders__icon {
   height: 28px;
 }
 .orders input {
   flex: 0 1 300px;
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0 0;
   height: 40px;
   padding: 10px;
   border-radius: 5px;

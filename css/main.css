@@ -99,6 +99,10 @@ body {
 .section {
   padding: 15px 0;
 }
+.section__title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
 
 .wrapper {
   display: flex;
@@ -328,6 +332,93 @@ body {
   font-size: 14px;
   padding: 0 10px;
   color: #fff;
+}
+
+.popular__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.popular__item {
+  margin: 10px 0;
+  flex: 0 1 25%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 940px) {
+  .popular__item {
+    flex: 0 1 33.3333%;
+  }
+  .popular__item:nth-child(7) {
+    display: none;
+  }
+  .popular__item:nth-child(8) {
+    display: none;
+  }
+}
+@media (max-width: 740px) {
+  .popular__item {
+    flex: 0 1 50%;
+  }
+  .popular__item:nth-child(7) {
+    display: flex;
+  }
+  .popular__item:nth-child(8) {
+    display: flex;
+  }
+}
+@media (max-width: 440px) {
+  .popular__item {
+    flex: 0 1 100%;
+    display: none;
+  }
+  .popular__item:nth-child(7) {
+    display: none;
+  }
+  .popular__item:nth-child(8) {
+    display: none;
+  }
+  .popular__item.activeplus {
+    display: flex;
+  }
+  .popular__item.active {
+    display: flex;
+  }
+}
+@media (max-width: 440px) {
+  .popular .popular__btn {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    color: #2796FF;
+    margin-top: 10px;
+  }
+  .popular .popular__btn::before {
+    text-align: center;
+    content: "показать все";
+  }
+  .popular .popular__btn.active::before {
+    text-align: center;
+    content: "скрыть";
+  }
+}
+.popular__img {
+  height: 70px;
+  width: 70px;
+  border-radius: 5px;
+}
+.popular__info {
+  margin: 0 0 0 15px;
+}
+.popular__title {
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.popular__price {
+  color: #333333;
+  font-weight: 300;
 }
 
 .stock {

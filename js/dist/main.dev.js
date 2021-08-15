@@ -25,3 +25,14 @@ var _loop = function _loop(i) {
 for (var i = 0; i < LINK.length; i++) {
   _loop(i);
 }
+
+var POPULAR = document.querySelectorAll('.popular__item');
+var POPULAR_BTN = document.querySelector('.popular__btn');
+POPULAR_BTN.addEventListener('click', function () {
+  POPULAR_BTN.classList.toggle('active');
+
+  for (var _i = 0; _i < POPULAR.length; _i++) {
+    var popular = POPULAR[_i];
+    popular.classList.toggle('activeplus');
+  }
+});

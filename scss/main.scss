@@ -106,6 +106,10 @@ body{
 }
 .section{
   padding: 15px 0;
+  &__title{
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
 }
 .wrapper{
   display: flex;
@@ -357,6 +361,110 @@ body{
     }
     
 }
+
+
+.popular {
+
+
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // .popular__item
+
+  &__item {
+    margin: 10px 0;
+    flex: 0 1 25%;
+    display: flex;
+    align-items: center;
+    @media (max-width: 940px) {
+      flex: 0 1 33.3333%;
+      &:nth-child(7){
+        display: none;
+      }
+      &:nth-child(8){
+        display: none;
+      }
+    }
+    @media (max-width: 740px) {
+      flex: 0 1 50%;
+      &:nth-child(7){
+        display: flex;
+      }
+      &:nth-child(8){
+        display: flex;
+      }
+    }
+    @media (max-width: 440px) {
+      flex: 0 1 100%;
+      display: none;
+      &:nth-child(7){
+        display: none;
+      }
+      &:nth-child(8){
+        display: none;
+      }
+      &.activeplus{
+        display: flex;
+      }
+      &.active{
+        display: flex;
+      }
+    }
+  }
+
+  .popular__btn{
+    @media (max-width: 440px) {
+      display: inline-block;
+      text-align: center; 
+      width: 100%;
+      text-transform: uppercase;
+      color:$activeColor;
+      margin-top: 10px;
+      &::before{
+        text-align: center;
+        content: "показать все";
+      }
+      &.active{
+        &::before{
+          text-align: center;
+          content: "скрыть";
+        }
+      }
+    }
+  }
+
+  &__img {
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+  }
+  &__info{
+    margin: 0 0 0 15px;
+  }
+  // .popular__title
+
+  &__title {
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  // .popular__price
+
+  &__price {
+    color: #333333;
+    font-weight: 300;
+  }
+}
+
+
+
+
+
 
 
 .stock{

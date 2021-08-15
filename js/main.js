@@ -24,3 +24,13 @@ for(let i = 0; i < LINK.length; i++){
 }
 
 
+const POPULAR = document.querySelectorAll('.popular__item')
+const POPULAR_BTN = document.querySelector('.popular__btn')
+
+POPULAR_BTN.addEventListener('click', () => {
+    POPULAR_BTN.classList.toggle('active')
+    for(let i = 0; i < POPULAR.length; i++){
+        let popular = POPULAR[i]
+            popular.classList.toggle('activeplus')
+    }
+})
